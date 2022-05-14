@@ -21,5 +21,8 @@ export class AppComponent {
       status: true
     }
   ]
-  
+  onHandleAdd(product: any) {
+    console.log("product", product);
+    this.productList.push(product);
+  }
 }

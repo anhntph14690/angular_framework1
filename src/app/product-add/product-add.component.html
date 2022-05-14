@@ -1,4 +1,7 @@
-<form action="">
-    <input type="text" />
-    <button>Submit</button>
+<h2>Product Add Component</h2>
+{{ product | json }}
+<form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="product.name" placeholder="name" name="name" />
+    <input type="number" [(ngModel)]="product.price" placeholder="price" name="price" />
+    <button>Add</button>
 </form>

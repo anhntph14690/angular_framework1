@@ -13,7 +13,7 @@
             <td>{{ i + 1 }}</td>
             <td>{{ product.name }}</td>
             <td>{{ product.price }}</td>
-            <td>{{ product.status ? 'Còn hàng' : 'hết hàng' }}</td>
+            <td>{{ product.status ? 'Còn hàng' : 'Hết hàng' }}</td>
             <td>
                 <button class="btn btn-danger" (click)="onHandleDelete(product.id)">Delete</button>
                 <button class="btn btn-info ms-1" (click)="onHandleGetInfo(product)">Detail</button>
