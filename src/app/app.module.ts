@@ -8,7 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
 
 
 @NgModule({

@@ -34,10 +34,11 @@
 </nav>
 
 
-
-<!-- <app-product-add (onAdd) = "onHandleAdd($event)"></app-product-add>
-
 <h2>Product List Component</h2> 
-<app-products [products]="productList"></app-products> -->
+<app-products [products]="productList"></app-products>
 
+<h2>Product Add Component</h2>
+<app-product-add (onAdd) = "onHandleAdd($event)"></app-product-add>
+
+<h2>Router Outlet</h2>
 <router-outlet></router-outlet>

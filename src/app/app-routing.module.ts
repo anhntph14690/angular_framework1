@@ -1,4 +1,5 @@
-import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 const routes: Routes = [
   { path: 'home', component: HelloComponent },
   { path: 'product', component: ProductsComponent },
+  { path: 'product/:id', component: ProductDetailComponent },
   { path: 'productAdd', component: ProductAddComponent },
   { path: 'about', component: AboutComponent}
 ];
