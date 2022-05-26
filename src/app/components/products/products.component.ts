@@ -1,3 +1,4 @@
+import { ProductService } from './../../services/product.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { IProduct } from '../../model/Product';
 
@@ -8,37 +9,18 @@ import { IProduct } from '../../model/Product';
 })
 export class ProductsComponent implements OnInit {
   
-  @Input() products!: IProduct[]
-  productDetail!: IProduct;
-  constructor() { }
+  products!: IProduct[]
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    // chạy
+    this.getProductList();
   }
-  onHandleDelete(id: number) {
-    this.products = this.products.filter(product => product.id !== id);
-  }
-  onHandleGetInfo(product: IProduct) {
-    this.productDetail = product;
-    console.log('product', product)
-  }
-}
-export class ListComponent {
-  productList: IProduct[] = [
-    {
-      id: 1,
-      name: "product A",
-      price: 200,
-      status: false
-    },
-    {
-      id: 2,
-      name: "product B",
-      price: 300,
-      status: true
-    }
-  ]
-  onHandleAdd(product: any) {
-    console.log("product", product);
-    this.productList.push(product);
+
+  // khai báo
+  getProductList() {
+    this.productService.getProductList().subscribe(data => {
+      this.products = data;
+    })
   }
 }

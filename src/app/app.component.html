@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <h4 class="navbar-brand" >My App</h4>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
@@ -31,14 +31,14 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 
 <h2>Product List Component</h2> 
-<app-products [products]="productList"></app-products>
+<app-products></app-products>
 
 <h2>Product Add Component</h2>
-<app-product-add (onAdd) = "onHandleAdd($event)"></app-product-add>
+<app-product-add (createProduct) = "onHandleAdd($event)"></app-product-add>
 
 <h2>Router Outlet</h2>
 <router-outlet></router-outlet>
