@@ -9,7 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 const routes: Routes = [
   { path: 'home', component: HelloComponent },
   { path: 'product', component: ProductsComponent },
-    { path: 'productAdd', component: ProductAddComponent },
+  { path: 'productAdd', component: ProductAddComponent },
   { path: 'product/:id', component: ProductDetailComponent },
   { path: 'about', component: AboutComponent}
 ];
