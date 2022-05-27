@@ -9,7 +9,9 @@ import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './page/home/home.component';
+import { NotFoundComponent } from './page/not-found/not-found.component'
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http'
     AboutComponent,
     ProductsComponent,
     ProductDetailComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

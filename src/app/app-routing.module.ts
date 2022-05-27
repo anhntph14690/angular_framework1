@@ -7,11 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  { path: 'home', component: HelloComponent },
+  { path: '', component: HelloComponent },
   { path: 'product', component: ProductsComponent },
-  { path: 'productAdd', component: ProductAddComponent },
+  { path: 'product/add', component: ProductAddComponent },
   { path: 'product/:id', component: ProductDetailComponent },
-  { path: 'about', component: AboutComponent}
+  { path: 'product/edit/:id', component: ProductDetailComponent },
+  { path: 'about', component: AboutComponent},
+  { path: '**', component: AboutComponent }
 ];
 
 @NgModule({
