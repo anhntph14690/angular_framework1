@@ -11,7 +11,19 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './page/home/home.component';
-import { NotFoundComponent } from './page/not-found/not-found.component'
+import { NotFoundComponent } from './page/not-found/not-found.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+//antd
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+
+registerLocaleData(en);
 
 
 @NgModule({
@@ -23,15 +35,19 @@ import { NotFoundComponent } from './page/not-found/not-found.component'
     ProductDetailComponent,
     ProductAddComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NzFormModule,
+    NzInputModule
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

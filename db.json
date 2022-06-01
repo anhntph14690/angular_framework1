@@ -7,10 +7,22 @@
       "status": true
     },
     {
-      "id": 2,
-      "name": "Product B",
-      "price": 200,
-      "status": true
+      "name": "Sản Phẩm 3",
+      "price": 100000,
+      "status": true,
+      "id": 3
+    },
+    {
+      "name": "Canon EOS M50 Mark II",
+      "price": 1111110,
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "Sản Phẩm 1",
+      "price": 2111110,
+      "status": true,
+      "id": 5
     }
   ]
 }
