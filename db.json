@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Product A",
+      "name": "Product A1",
       "price": 100,
       "status": true
     },
