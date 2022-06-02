@@ -1,6 +1,6 @@
 import { ProductService } from './../../services/product.service';
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { IProduct } from '../../model/Product';
 
 @Component({
@@ -13,6 +13,7 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private router: ActivatedRoute,
     private productService: ProductService,
+    // private router: Router,
     private activatedRoute: ActivatedRoute
 
   ) {
@@ -40,7 +41,7 @@ export class ProductDetailComponent implements OnInit {
       // call service add product
       this.productService.addProduct(this.product).subscribe(data => {
         // chuyển hướng router
-        // this.router.navigateByUrl('/product');
+        this.router.navigateByUrl('/product');
       })
     }
   }

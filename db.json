@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "Sản Phẩm 1",
+      "name": "Sản phẩm 1",
       "price": 100000,
       "status": true,
       "id": 1
