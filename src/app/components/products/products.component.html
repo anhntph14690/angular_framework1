@@ -1,28 +1,30 @@
+<div class="max-w-5xl mx-auto px-5">
+    <a type="button" routerLink="/product/add" class="text-blue-500">Add</a>
+    <table class="table table-bordererd">
 
-<a type="button" routerLink="/product/add" class="btn btn-link">Add</a>
-<table class="table table-bordererd">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let product of products; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>{{ product.name }}</td>
-            <td>{{ product.price }}</td>
-            <td>{{ product.status ? 'Còn hàng' : 'Hết hàng' }}</td>
-            <td>
-                <button class="btn btn-danger" (click)="onHandleRemove(product.id!)" >Delete</button>
-                <button class="btn btn-info ms-1">Detail</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.status ? 'Còn hàng' : 'Hết hàng' }}</td>
+                <td>
+                    <button class=" btn-danger" (click)="onHandleRemove(product.id!)">Delete</button>
+                    <button class="btn btn-info ms-1">Detail</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <!-- <app-products [products]="productList"></app-products> -->
 
@@ -32,3 +34,6 @@
     <app-product-detail [product]="productDetail"></app-product-detail>
     <router-outlet></router-outlet>
 </div> -->
+
+
+

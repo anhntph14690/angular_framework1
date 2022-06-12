@@ -1,1 +1,97 @@
-<p>home works!</p>
+
+<app-header></app-header>
+
+<section class="banner">
+    <div class="custom-container">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="banner-content">
+                <h2 class="banner-content__title">
+                    Hi, I am The Anh, Front End Developer
+                </h2>
+                <p class="banner-content__desc">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <a href="" class="btn btn-danger banner-content__btn">Download Resume</a>
+            </div>
+            <div class="banner-picture">
+                <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654600439/Avatar_ok2zco.jpg" alt=""
+                    class="banner-picture__thumb" />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recent-post">
+    <div class="custom-container">
+        <div class="seciton-header">
+            <h2 class="seciton-header__title">Recent post</h2>
+            <a href="">View all</a>
+        </div>
+        <div class="section-body">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="recent-post__item">
+                    <h3 class="recent-post__title">
+                        Making a design system from scratch
+                    </h3>
+                    <div class="recent-post__meta">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <a href="">Design, Pattern</a>
+                    </div>
+                    <p class="recent-post__desc">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div class="recent-post__item">
+                    <h3 class="recent-post__title">
+                        Creating pixel perfect icons in Figma
+                    </h3>
+                    <div class="recent-post__meta">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <a href="">Figma, Icon Design</a>
+                    </div>
+                    <p class="recent-post__desc">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects">
+    <div class="custom-container">
+        <div class="seciton-header">
+            <h2 class="seciton-header__title">Feature Projects</h2>
+        </div>
+        <div class="section-body">
+            <div *ngFor="let product of products; let i = index"
+            class="project__item grid md:grid-cols-[246px,auto] gap-4">
+                <div class="project__img">
+                    <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654714391/Rectangle_30_ku6hde.jpg"
+                        alt="" class="project__thumbnail" />
+                </div>
+                <div class="project__content">
+                    <h3 class="project__name">{{ product.name }}</h3>
+                    <div class="project__meta">
+                        <span class="project__createat">{{ product.price }}</span>
+                        <a href="" class="project__category">{{ product.status ? "Còn hàng" : "Hết hàng" }}</a>
+                    </div>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

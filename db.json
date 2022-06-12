@@ -1,34 +1,16 @@
 {
   "products": [
     {
-      "name": "Sản phẩm 1",
-      "price": 100000,
+      "name": "Sản phẩm 1 Update",
+      "price": 10,
       "status": true,
       "id": 1
     },
     {
       "name": "Sản Phẩm 2",
-      "price": 100000,
+      "price": 1000000,
       "status": true,
       "id": 2
-    },
-    {
-      "name": "Sản Phẩm 3",
-      "price": 100000,
-      "status": true,
-      "id": 3
-    },
-    {
-      "name": "Sản Phẩm 4",
-      "price": 100000,
-      "status": true,
-      "id": 4
-    },
-    {
-      "name": "Sản Phẩm 5",
-      "price": 100000,
-      "status": true,
-      "id": 5
     }
   ]
 }

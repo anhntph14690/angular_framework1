@@ -20,8 +20,16 @@ import en from '@angular/common/locales/en';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 //antd
+// import { Menu } from 'antd';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { BlogComponent } from './page/blog/blog.component';
+import { WorksPageComponent } from './page/works-page/works-page.component';
+import { HeaderComponent } from './page/header/header.component';
+import { FooterComponent } from './page/footer/footer.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { HomeAdminComponent } from './components/admin/home-admin/home-admin.component';
+
 
 registerLocaleData(en);
 
@@ -36,7 +44,13 @@ registerLocaleData(en);
     ProductAddComponent,
     HomeComponent,
     NotFoundComponent,
-    SignupComponent
+    SignupComponent,
+    BlogComponent,
+    WorksPageComponent,
+    HeaderComponent,
+    FooterComponent,
+    AdminComponent,
+    HomeAdminComponent
   ],
   imports: [
     BrowserModule,
