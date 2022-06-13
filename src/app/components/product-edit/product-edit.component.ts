@@ -1,26 +1,28 @@
 import { ProductService } from './../../services/product.service';
 import { IProduct } from './../../model/Product';
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-product-add',
-  templateUrl: './product-add.component.html',
-  styleUrls: ['./product-add.component.css']
+  selector: 'app-product-edit',
+  templateUrl: './product-edit.component.html',
+  styleUrls: ['./product-edit.component.css']
 })
-export class ProductAddComponent implements OnInit {
-
-  // @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
-  product: IProduct = {
-    name: "",
-    price: 0,
-    status: true
-  }
+export class ProductEditComponent implements OnInit {
+  product!: IProduct
   constructor(
+    // private router: ActivatedRoute,
     private productService: ProductService,
     private router: Router,
     private activatedRoute: ActivatedRoute
-  ) { }
+
+  ) {
+    // const id = this.router.snapshot.paramMap.get('id');
+    // // this.product = this.productService.getProduct(id)!;
+    // this.productService.getProduct(id).subscribe((data) => {
+    //   this.product = data
+    // })
+  }
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
@@ -43,4 +45,5 @@ export class ProductAddComponent implements OnInit {
       })
     }
   }
+
 }

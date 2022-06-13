@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './components/hello/hello.component';
-import { AboutComponent } from './components/about/about.component';
+import { AboutComponent } from './page/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
@@ -29,6 +29,7 @@ import { HeaderComponent } from './page/header/header.component';
 import { FooterComponent } from './page/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeAdminComponent } from './components/admin/home-admin/home-admin.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 
 registerLocaleData(en);
@@ -50,7 +51,8 @@ registerLocaleData(en);
     HeaderComponent,
     FooterComponent,
     AdminComponent,
-    HomeAdminComponent
+    HomeAdminComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,

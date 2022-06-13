@@ -1,5 +1,5 @@
 <div class="max-w-5xl mx-auto px-5">
-    <a type="button" routerLink="/product/add" class="text-blue-500">Add</a>
+    <a type="button" routerLink="/admin/product/add" class="text-blue-500">Add</a>
     <table class="table table-bordererd">
 
         <thead>
@@ -18,8 +18,8 @@
                 <td>{{ product.price }}</td>
                 <td>{{ product.status ? 'Còn hàng' : 'Hết hàng' }}</td>
                 <td>
-                    <button class=" btn-danger" (click)="onHandleRemove(product.id!)">Delete</button>
-                    <button class="btn btn-info ms-1">Detail</button>
+                    <button class="btn btn-info w-20 h-8 rounded-2xl text-white" routerLink="/admin/product/edit/{{ product.id! }}" >Edit</button>
+                    <button class="btn-danger w-20 h-8 rounded-xl text-white" (click)="onHandleRemove(product.id!)">Delete</button>
                 </td>
             </tr>
         </tbody>
