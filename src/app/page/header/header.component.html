@@ -8,13 +8,26 @@
                 </button>
             </div>
             <div class="flex justify-end">
-                <ul class="hidden md:flex space-x-4">
+                <ul class="hidden md:flex space-x-4 my-auto">
                     <li><a class="hover:text-rose-500" routerLink="">Home</a></li>
                     <li><a class="hover:text-rose-500" routerLink="/works">Works</a></li>
                     <li><a class="hover:text-rose-500" routerLink="/blog">Blog</a></li>
                     <li><a class="hover:text-rose-500" routerLink="">Contact</a></li>
-                    <li><a class="hover:text-rose-500" routerLink="/admin">Admin</a></li>
-
+                    <!-- <li><a class="hover:text-rose-500" routerLink="/admin">Admin</a></li> -->
+                    
+                </ul>
+                <ul class="navbar-nav ml-8">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" routerLink="/admin">Admin</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
