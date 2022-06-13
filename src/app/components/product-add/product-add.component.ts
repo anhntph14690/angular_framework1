@@ -34,7 +34,7 @@ export class ProductAddComponent implements OnInit {
     if (id) {
       // call services edit product
       // nếu thành công thì trả về sản phẩm vừa cập nhật xong
-      this.productService.updateProduct(this.product).subscribe(data => console.log(data))
+      
     } else {
       // call service add product
       this.productService.addProduct(this.product).subscribe(data => {

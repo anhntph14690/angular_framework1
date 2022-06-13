@@ -38,9 +38,15 @@
     },
     {
       "name": "Sản Phẩm 2",
-      "price": 10,
+      "price": 100000000,
       "status": true,
       "id": 7
+    },
+    {
+      "name": "Nguyễn Thế Anh",
+      "price": 0,
+      "status": true,
+      "id": 8
     }
   ]
 }
