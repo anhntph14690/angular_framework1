@@ -4,31 +4,31 @@
       "name": "Sản Phẩm 1",
       "price": 10,
       "status": true,
-      "id": 1
+      "id": 2
     },
     {
       "name": "Sản Phẩm 2",
       "price": 10,
       "status": true,
-      "id": 2
+      "id": 3
     },
     {
       "name": "Sản Phẩm 3",
       "price": 10,
       "status": true,
-      "id": 3
+      "id": 4
     },
     {
       "name": "Sản Phẩm 4",
       "price": 10,
       "status": true,
-      "id": 4
+      "id": 5
     },
     {
       "name": "Sản Phẩm 5",
       "price": 10,
       "status": true,
-      "id": 5
+      "id": 6
     }
   ]
 }
