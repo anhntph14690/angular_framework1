@@ -1,0 +1,40 @@
+
+<!-- {{ products.name | json }} -->
+
+<!-- <form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="product.name" placeholder="name" name="name" />
+    <input type="number" [(ngModel)]="product.price" placeholder="price" name="price" />
+    <button>Edit</button>
+</form> -->
+
+<app-header></app-header>
+
+<section class="projects">
+    <div class="custom-container">
+
+        <div class="section-body">
+            <div
+             class="grid md:grid-cols-[auto]">
+
+                <div class="project__content">
+                    <h3 class="project__name">{{ products.name }}</h3>
+                    <div class="project__meta">
+                        <span class="project__createat bg-red-400">{{ products.price }}</span>
+                        <a href="" class="project__category">{{ products.status ? 'Còn hàng' : 'Hết hàng' }}</a>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>  
+                </div>
+                <div class="project__img">
+                    <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654907854/Rectangle_4_rjnv72.png"
+                        alt="" class="project__thumbnail">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<app-footer></app-footer>

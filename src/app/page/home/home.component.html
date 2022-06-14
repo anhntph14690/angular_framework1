@@ -1,4 +1,3 @@
-
 <app-header></app-header>
 
 <section class="banner">
@@ -71,13 +70,18 @@
         </div>
         <div class="section-body">
             <div *ngFor="let product of products; let i = index"
-            class="project__item grid md:grid-cols-[246px,auto] gap-4">
+                class="project__item grid md:grid-cols-[246px,auto] gap-4">
                 <div class="project__img">
-                    <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654714391/Rectangle_30_ku6hde.jpg"
-                        alt="" class="project__thumbnail" />
+                    <a href="" routerLink="/product/{{ product.id! }}">
+                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654714391/Rectangle_30_ku6hde.jpg"
+                            alt="" class="project__thumbnail" />
+                    </a>
+
                 </div>
                 <div class="project__content">
-                    <h3 class="project__name">{{ product.name }}</h3>
+                    <a href="" routerLink="/product/{{ product.id! }}">
+                        <h3 class="project__name">{{ product.name }}</h3>
+                    </a>
                     <div class="project__meta">
                         <span class="project__createat">{{ product.price }}</span>
                         <a href="" class="project__category">{{ product.status ? "Còn hàng" : "Hết hàng" }}</a>
@@ -89,7 +93,7 @@
                     </p>
                 </div>
             </div>
-           
+
         </div>
     </div>
 </section>

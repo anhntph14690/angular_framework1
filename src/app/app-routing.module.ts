@@ -7,7 +7,7 @@ import { BlogComponent } from './page/blog/blog.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
 import { HomeComponent } from './page/home/home.component';
 import { SignupComponent } from './components/signup/signup.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductDetailComponent } from './page/product-detail/product-detail.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HelloComponent } from './components/hello/hello.component';
@@ -24,6 +24,8 @@ const routes: Routes = [
   },
   {path: 'works', component: WorksPageComponent},
   {path: 'blog', component: BlogComponent},
+  { path: 'product/:id', component: ProductDetailComponent },
+
 
   {
     path: 'admin', component: AdminComponent,
@@ -31,7 +33,7 @@ const routes: Routes = [
       { path: '', component: HomeAdminComponent },
       { path: 'product', component: ProductsComponent },
       { path: 'product/add', component: ProductAddComponent },
-      { path: 'product/:id', component: ProductDetailComponent },
+      // { path: 'product/:id', component: ProductDetailComponent },
       { path: 'product/edit/:id', component: ProductEditComponent }
     ],
   },

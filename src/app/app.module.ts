@@ -7,7 +7,7 @@ import { HelloComponent } from './components/hello/hello.component';
 import { AboutComponent } from './page/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductDetailComponent } from './page/product-detail/product-detail.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './page/home/home.component';
