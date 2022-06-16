@@ -7,7 +7,7 @@
             <h2 class="title_page">Works</h2>
         </div>
         <div class="section-body">
-            <div 
+            <div *ngFor="let product of products; let i = index"
             class="project__item grid md:grid-cols-[246px,auto] gap-4">
                 <div class="project__img">
                     <a href="./works_detail.html">
@@ -16,10 +16,10 @@
                     </a>
                 </div>
                 <div class="project__content">
-                    <h3 class="project__name">Designing Dashboards</h3>
+                    <h3 class="project__name">{{ product.name }}</h3>
                     <div class="project__meta">
-                        <span class="project__createat">2020</span>
-                        <a href="" class="project__category">Dashboard</a>
+                        <span class="project__createat">{{ product.price }}</span>
+                        <a href="" class="project__category">{{ product.status ? "Còn hàng" : "Hết hàng" }}</a>
                     </div>
                     <p>
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -29,47 +29,7 @@
                 </div>
             </div>
             <!--End .project-item-->
-            <div class="project__item grid md:grid-cols-[246px,auto] gap-4">
-                <div class="project__img">
-                    <a href="./works_detail.html">
-                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654714391/Rectangle_32_fv9q8r.jpg"
-                            alt="" class="project__thumbnail" />
-                    </a>
-                </div>
-                <div class="project__content">
-                    <h3 class="project__name">Vibrant Portraits of 2020</h3>
-                    <div class="project__meta">
-                        <span class="project__createat">2018</span>
-                        <a href="" class="project__category">Illustration</a>
-                    </div>
-                    <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit
-                        mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-            <!--End .project-item-->
-            <div class="project__item grid md:grid-cols-[246px,auto] gap-4">
-                <div class="project__img">
-                    <a href="./works_detail.html">
-                        <img src="https://res.cloudinary.com/dsirnbuyv/image/upload/v1654714391/Rectangle_34_wlciie.jpg"
-                            alt="" class="project__thumbnail" />
-                    </a>
-                </div>
-                <div class="project__content">
-                    <h3 class="project__name">36 Days of Malayalam type</h3>
-                    <div class="project__meta">
-                        <span class="project__createat">2018</span>
-                        <a href="" class="project__category">Typography</a>
-                    </div>
-                    <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-            <!--End .project-item-->
+
         </div>
     </div>
 </section>
