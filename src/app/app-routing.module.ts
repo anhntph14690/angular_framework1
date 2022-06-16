@@ -28,9 +28,9 @@ const routes: Routes = [
 
 
   {
-    path: 'admin', component: AdminComponent,
+    path: 'admin',
     children: [
-      { path: '', component: HomeAdminComponent },
+      { path: '', component: AdminComponent },
       { path: 'product', component: ProductsComponent },
       { path: 'product/add', component: ProductAddComponent },
       // { path: 'product/:id', component: ProductDetailComponent },
